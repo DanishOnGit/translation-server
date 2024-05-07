@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
 app.post('/getTranslation', (req, res) => {
   const {reqLanguage,data} = req.body
   console.log({reqLanguage,data})
-  res.json({ message: 'Translation received and saved successfully.' });
+  res.json({ message: 'Translation received and saved successfully.' ,reqLanguage,data });
 });
 
 // Start the server
